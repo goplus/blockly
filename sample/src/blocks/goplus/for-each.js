@@ -99,7 +99,7 @@ export default {
    */
   onPlusClick_(minusField) {
     const block = minusField.getSourceBlock();
-if (block.isInFlyout) return;
+    if (block.isInFlyout) return;
 
     Blockly.Events.setGroup(true);
     const oldExtraState = block.saveExtraState();
